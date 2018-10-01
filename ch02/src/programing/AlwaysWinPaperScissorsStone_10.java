@@ -16,17 +16,14 @@ public class AlwaysWinPaperScissorsStone_10 {
 		int outputN;
 		
 		if(playInput.equals("가위")) {
-			inputN = 0;
 			playWinOutput ="바위";
 			System.out.println("바위");
 			
 		}else if(playInput.equals("바위")) {
-			inputN = 1;
 			playWinOutput ="보";
 			System.out.println("보");
 
 		}else {
-			inputN = 2;
 			playWinOutput="가위";
 			System.out.println("가위");
 
