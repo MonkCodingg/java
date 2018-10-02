@@ -3,7 +3,7 @@ package programming;
 
 
 
-public class _08_PrintStarSteps2 {
+public class _08_PrintStarStepsMethod {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
