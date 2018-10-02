@@ -3,7 +3,7 @@ package challenge;
 public class PrinterTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Printer 클래스를 테스트하는 코드
 		Printer printerC = new Printer();
 		printerC.numOfPapers =printerC.numOfPapers + 100;
 		printerC.print(70);
@@ -13,9 +13,11 @@ public class PrinterTest {
 }
 
 class Printer{
-	int numOfPapers;
+	int numOfPapers = 0;
 	
 	void print(int amount) {
+		//코드 추가
+		numOfPapers = numOfPapers - amount;
 		
 	}
 		
