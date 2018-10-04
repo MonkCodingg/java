@@ -28,9 +28,7 @@ class Printer2{
 			System.out.println("모두 출력하려면 용지가 "+ (amount-firstPaperN) +"매 부족합니다. "+ firstPaperN +"장만 출력합니다." );
 			System.out.println("용지가 없습니다.");
 		}
-		
-		
-			
+				
 	}
 	
 	public int getNumOfPapers() {
