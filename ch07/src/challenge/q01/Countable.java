@@ -1,4 +1,4 @@
-package challenge;
+package challenge.q01;
 
 
 public interface Countable {

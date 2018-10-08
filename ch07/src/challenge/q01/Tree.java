@@ -1,4 +1,4 @@
-package challenge;
+package challenge.q01;
 
 public class Tree implements Countable {
 	String name;
@@ -11,10 +11,10 @@ public class Tree implements Countable {
 //		
 //	}
 	public void ripen() {
-		System.out.println("Tree ripen : " + name +"에 열매가 잘익었다.");
+		System.out.println(name +"에 열매가 잘익었다.");
 	}
 	
 	public void count() {
-		System.out.println("Tree count  : " + name +"가 5그루 있다.");
+		System.out.println(name +"가 5그루 있다.");
 	}
 }

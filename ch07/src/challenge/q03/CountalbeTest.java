@@ -1,4 +1,4 @@
-package challenge;
+package challenge.q03;
 
 public class CountalbeTest {
 
@@ -11,7 +11,13 @@ public class CountalbeTest {
 				new Tree("¹ã³ª¹«")
 				
 		};
-	
+		
+		m[0].num = 5;
+		m[1].num = 2;
+		m[2].num = 10;
+		m[3].num = 7;
+		
+		
 		for (Countable e : m){
 			e.count();
 			
