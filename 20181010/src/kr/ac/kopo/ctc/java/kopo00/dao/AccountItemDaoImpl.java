@@ -43,19 +43,19 @@ public class AccountItemDaoImpl implements AccountItemDao {
 		return Database.accountItems;
 	}
 
-	@Override
-	public List<AccountItem> selectAllByMonth(int year, int month) {
-		List<AccountItem> result = new ArrayList<AccountItem>();
-
-		for (AccountItem item : Database.accountItems) {
-			if (item.getDt().getYear() == year && item.getDt().getMonth() == month) {
-				System.out.println("item.getDt().getYear() : "+item.getDt().getYear());
-				result.add(item);
-			}
-		}
-
-		return Database.accountItems;
-	}
+//	@Override
+//	public List<AccountItem> selectAllByMonth(int year, int month) {
+//		List<AccountItem> result = new ArrayList<AccountItem>();
+//
+//		for (AccountItem item : Database.accountItems) {
+//			if (item.getDt().getYear() == year && item.getDt().getMonth() == month) {
+//				
+//				result.add(item);
+//			}
+//		}
+//
+//		return Database.accountItems;
+//	}
 
 	@Override
 	//id 값으로 해당 객체 불어와서

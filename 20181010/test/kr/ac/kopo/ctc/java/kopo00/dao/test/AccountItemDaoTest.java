@@ -6,7 +6,7 @@ import kr.ac.kopo.ctc.java.kopo00.dao.AccountItemDaoImpl;
 import kr.ac.kopo.ctc.java.kopo00.domain.AccountItem;
 
 // dao의 CRUD 기능만 제대로 작동하는지 테스트
-public interface AccountItemDaoTest {
+public class AccountItemDaoTest {
 	/*
 	 * 자바는 static 키워드로 클래스의 필드를 공유할 수 있도록 지원 정적 변수 혹은 클래스 변수 static 키워드로 지정하여 모든
 	 * 인스턴스가 공유하는 필드 정직 변수 클래스 로더가 클래스를 메서드 영역에 적재할 때 생성하므로 객체 생성 전에도 접근 가능 객체를 여러 개
@@ -20,9 +20,9 @@ public interface AccountItemDaoTest {
 
 	public static void main(String[] args) {
 //		testCreate();
-//		testSlectOne();
+//		testSelectOne();
 //		testSelectAll();
-		testSelectByMonth();
+//		testSelectByMonth();
 //		testUpdate();
 //		testDelete();
 	}
@@ -31,7 +31,7 @@ public interface AccountItemDaoTest {
 		AccountItem item = new AccountItem();
 		// 구성원소들 값 설정
 		item.setId(id);
-		item.setDt(new Date(year, month, day));
+		item.setDt(new Date(year - 1900, month - 1, day));
 		item.setDesc("desc" + id);
 		item.setCash(100 * id);
 		item.setCard(100 * id);
@@ -102,7 +102,7 @@ public interface AccountItemDaoTest {
 		}
 	}
 	
-	public static void testSlectOne() {
+	public static void testSelectOne() {
 		/*
 		 * AccountItem item = new AccountItem(); item.setId(1); item.setDt(new Date());
 		 * item.setDesc("커피"); item.setCash(5000); item.setCard(0); item.setType("음료");
@@ -150,34 +150,34 @@ public interface AccountItemDaoTest {
 		System.out.println(accountItems.size() == 2);
 	}
 
-	public static void testSelectByMonth() {
-		/*AccountItem item1 = new AccountItem();
-		item1.setId(1);
-		item1.setDt(new Date(2018, 10, 10));
-		item1.setDesc("커피");
-		item1.setCash(100);
-		item1.setCard(100);
-		item1.setType("음료");
-		item1.setTag("");
-
-		AccountItem item2 = new AccountItem();
-		item2.setId(2);
-		item2.setDt(new Date(2018, 10, 10));
-		item2.setDesc("커피");
-		item2.setCash(200);
-		item2.setCard(200);
-		item2.setType("음료");
-		item2.setTag("");
-		AccountItemDaoImpl dao = new AccountItemDaoImpl();
-		dao.create(item1);
-		dao.create(item2);*/
-		
-		// 정적 변수(클래스 변수) dao 사용.
-		List<AccountItem> accountItems = dao.selectAllByMonth(2018, 10);
-		
-		//to do
-		System.out.println(accountItems.size());
-	}
+//	public static void testSelectByMonth() {
+//		/*AccountItem item1 = new AccountItem();
+//		item1.setId(1);
+//		item1.setDt(new Date(2018, 10, 10));
+//		item1.setDesc("커피");
+//		item1.setCash(100);
+//		item1.setCard(100);
+//		item1.setType("음료");
+//		item1.setTag("");
+//
+//		AccountItem item2 = new AccountItem();
+//		item2.setId(2);
+//		item2.setDt(new Date(2018, 10, 10));
+//		item2.setDesc("커피");
+//		item2.setCash(200);
+//		item2.setCard(200);
+//		item2.setType("음료");
+//		item2.setTag("");
+//		AccountItemDaoImpl dao = new AccountItemDaoImpl();
+//		dao.create(item1);
+//		dao.create(item2);*/
+//		setUp();
+//		
+//		// 정적 변수(클래스 변수) dao 사용.
+//		List<AccountItem> accountItems = dao.selectAllByMonth(2018, 10);
+//		
+//		System.out.println(accountItems.size() == 2);
+//	}
 
 	public static void testUpdate() {
 		// accountItem 5개 생성

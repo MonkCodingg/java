@@ -1,5 +1,6 @@
 package kr.ac.kopo.ctc.java.kopo00.domain;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AccountItem {
@@ -53,6 +54,15 @@ public class AccountItem {
 	public void setTag(String tag) {
 		this.tag = tag;
 	}
-	
+	public String toString() {
+		SimpleDateFormat tf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		return this.getId() + "," +
+				tf.format(this.getDt()) + "," +
+				this.getDesc() + "," +
+				this.getCash() + "," +
+				this.getCard() + "," +
+				this.getType() + "," +
+				this.getTag();
+	}
 
 }
