@@ -20,6 +20,8 @@ public class AccountItemDaoImpl implements AccountItemDao {
 		 * 
 		 * 지정된 요소를 이 리스트의 마지막에 추가합니다
 		 */
+		
+		item.setId(++Database.accountItems_last_id);
 		Database.accountItems.add(item);
 	}
 
