@@ -20,9 +20,13 @@ public class AccountItemDaoImpl implements AccountItemDao {
 		 * 
 		 * 지정된 요소를 이 리스트의 마지막에 추가합니다
 		 */
+		// getId가 0이라는 것은 사용자가 입력한 경우임.
 		if (item.getId() ==0) {
 			item.setId(++Database.accountItems_last_id);
 		}
+		// 사용자가 입력한 경우가 아닌 경우
+		// (getId가 0이 아닌 경우)
+		// 기존 아이디 그대로 들어감.
 		Database.accountItems.add(item);
 	}
 
