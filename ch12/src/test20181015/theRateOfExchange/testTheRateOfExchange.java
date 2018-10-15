@@ -79,11 +79,12 @@ public class testTheRateOfExchange {
 					trans = input * transRate;
 					
 					System.out.println("추가하시겠습니까? (1:Yes, 2:No) : ");
+					int input =myInput.nextInt();
 					// yes 면 환률아이템객체 만들고 속성 세팅하는 메서드 실행.
 					// 버퍼리더 초기화로 input.txt 첫행으로 이동.
 					// 다시 비교할 국가코드 입력받기
 					
-					if (1 == myInput.nextInt()) {
+					if (1 == input) {
 						System.out.println(4);
 						create();
 						//버퍼리더 초기화 필요
@@ -101,7 +102,7 @@ public class testTheRateOfExchange {
 					// 오직 이 경우에만 while 문을 나가고
 					// 그 후 save()를 통해
 					// 그동안 저장되었던 내용을 파일에 출력한다.
-					} else if (2 == myInput.nextInt()) {
+					} else if (2 == input) {
 						System.out.println("5");
 						break;
 					}else {
@@ -137,6 +138,8 @@ public class testTheRateOfExchange {
 			}
 			System.out.println("10");
 		}
+		System.out.println("11");
+
 		save();
 		System.out.println("종료");
 
