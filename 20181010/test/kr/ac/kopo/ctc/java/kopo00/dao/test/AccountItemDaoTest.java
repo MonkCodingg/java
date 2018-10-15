@@ -19,7 +19,7 @@ public class AccountItemDaoTest {
 	static AccountItemDaoImpl dao = new AccountItemDaoImpl();
 
 	public static void main(String[] args) {
-//		testCreate();
+		testCreate();
 //		testSelectOne();
 //		testSelectAll();
 //		testSelectByMonth();
