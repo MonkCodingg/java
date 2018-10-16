@@ -76,8 +76,9 @@ public class AccountUiHome {
 	}
 
 	private static void showDeleteMenu() throws Exception {
-
-		// 입력 받기
+		// 전체 목록 보여주기
+		showListAll();
+		//입력 받기
 		System.out.println("삭제하려는 가계부 항목의 id값 입력해줘 : ");
 		Scanner in = new Scanner(System.in);
 		int id = in.nextInt();
@@ -137,6 +138,7 @@ public class AccountUiHome {
 		System.out.println("수정할 현금 사용 : ");
 		accountItem.setCard(in.nextInt());
 		System.out.println("수정할 타입 : ");
+		//식비,의류,교육,주거
 		accountItem.setType(in.next());
 		System.out.println("수정할 태그 : ");
 		accountItem.setTag(in.next());
@@ -190,6 +192,7 @@ public class AccountUiHome {
 		System.out.print("현금 사용 : ");
 		accountItem.setCard(in.nextInt());
 		System.out.print("타입 : ");
+		//식비,의류,교육,주거
 		accountItem.setType(in.next());
 		System.out.print("태그 : ");
 		accountItem.setTag(in.next());
