@@ -26,7 +26,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 				String[] arr = line.split(",");
 
 				item.setId(Integer.parseInt(arr[0]));
-				// 스트링-> 데이트 타입 변환
+				// String-> Date 타입 변환
 				item.setDt(tf.parse(arr[1]));
 				item.setDesc(arr[2]);
 				item.setCash(Integer.parseInt(arr[3]));
@@ -34,6 +34,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 				item.setType(arr[5]);
 				
 				// 배열 갯수
+				// arr[6] 7번째 배열
 				if (arr.length > 6) {
 					item.setTag(arr[6]);
 				}

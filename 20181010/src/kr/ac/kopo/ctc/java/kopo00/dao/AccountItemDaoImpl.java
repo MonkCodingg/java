@@ -21,6 +21,7 @@ public class AccountItemDaoImpl implements AccountItemDao {
 		 * 지정된 요소를 이 리스트의 마지막에 추가합니다
 		 */
 		// getId가 0이라는 것은 사용자가 입력한 경우임.
+		// 기존 마지막 식별 id 값에 1을 더한 값 저장.
 		if (item.getId() ==0) {
 			item.setId(++Database.accountItems_last_id);
 		}
@@ -65,7 +66,7 @@ public class AccountItemDaoImpl implements AccountItemDao {
 //	}
 
 	@Override
-	//id 값으로 해당 객체 불어와서
+	//id 값으로 해당 객체 불러와서
 	//입력받은 data로 이전 data를 수정한다.
 	//이때 set() 이용. 구성 원소들 모두 private.
 	public void update(int id, AccountItem item) {

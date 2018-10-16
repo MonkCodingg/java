@@ -29,17 +29,6 @@ public class AccountUiHome {
 		Scanner in = new Scanner(System.in);
 
 		List<AccountItem> accountItems = Database.accountItems;
-		// 생성
-//		createInput();
-
-//		업데이트
-//		update();
-
-//		전체목록
-//	showListAll();
-
-//		월별목록
-//		showListMonth();
 
 		boolean isExit = false;
 
@@ -49,9 +38,10 @@ public class AccountUiHome {
 			System.out.printf("원하시는 화면번호 입력해줄래: ");
 
 			int n = in.nextInt();
-			
+
 			switch (n) {
 			case 1:
+				// 등록
 				createInput();
 				break;
 			case 2:
@@ -63,10 +53,12 @@ public class AccountUiHome {
 				showListAll();
 				break;
 			case 4:
-//				show4rdMenu();
+				// 수정
+				update();
 				break;
 			case 5:
-//				show4rdMenu();
+				// 삭제
+				showDeleteMenu();
 				break;
 			case 6:
 				consumingAnalyze();
@@ -81,6 +73,16 @@ public class AccountUiHome {
 			databaseService.save();
 		}
 		in.close();
+	}
+
+	private static void showDeleteMenu() throws Exception {
+
+		// 입력 받기
+		System.out.println("삭제하려는 가계부 항목의 id값 입력해줘 : ");
+		Scanner in = new Scanner(System.in);
+		int id = in.nextInt();
+		accountItemService.delete(id);
+		// 삭제된 것 확인 할 수 있게 전체목록 출력
 	}
 
 	static void showListMenu() throws Exception {
@@ -106,6 +108,9 @@ public class AccountUiHome {
 	}
 
 	private static void update() throws Exception {
+		int id = 0;
+		String inputD = "";
+		SimpleDateFormat tf = new SimpleDateFormat("yyyyMMdd");
 		// 전체 목록 보여주기
 		showListAll();
 		AccountItem accountItem = new AccountItem();
@@ -115,15 +120,18 @@ public class AccountUiHome {
 		System.out.println("");
 		System.out.println("<수정>");
 		System.out.println("수정할 게시글 id값 입력 : ");
-		int id = in.nextInt();
+		id = in.nextInt();
 		accountItem.setId(id);
-
+		
 		// 수정할 내용 입력 받기
 		System.out.println("<수정하기>");
 		System.out.println("수정할 세부내용 입력 : ");
 		accountItem.setDesc(in.next());
-		System.out.println("수정할 날짜 : ");
-		accountItem.setDt(new Date());
+		//날자 입력 받는 형태 : 20180815 
+		System.out.println("수정할 날짜 (cf.20180815) : ");
+		inputD = in.next();
+		Date date = tf.parse(inputD);
+		accountItem.setDt(date);
 		System.out.println("수정할 카드 사용 : ");
 		accountItem.setCash(in.nextInt());
 		System.out.println("수정할 현금 사용 : ");
@@ -163,22 +171,18 @@ public class AccountUiHome {
 		System.out.println("가계부 입력값 정보 : Desc, Date, Cash, Card, Type, Tag");
 		System.out.println("세부내용 : ");
 		accountItem.setDesc(in.next());
-		System.out.println("날짜 : ");
-//		날짜 입력 받는 타입은 "20181012 123000";
+		System.out.println("날짜 (cf. 20180815 ) : ");
+//		날짜 입력 받는 타입은 "20181012";
 		String d = in.next();
 		Date date = tf.parse(d);
-//		
+	
 //		int year = Integer.parseInt(d.substring(0, 4)); // 2018
 //		int month = Integer.parseInt(d.substring(4, 6)); // 10
-//
 //		int day = Integer.parseInt(d.substring(6, 8)); // 12
-//
 //		int h = Integer.parseInt(d.substring(9, 11)); // 12
-//
 //		int m = Integer.parseInt(d.substring(11, 13)); // 30
-//
 //		int s = 0;
-//		
+
 		accountItem.setDt(date);
 
 		System.out.print("카드 사용 : ");
@@ -212,19 +216,11 @@ public class AccountUiHome {
 	}
 
 	private static void showCreateMenu() {
-		// TODO Auto-generated method stub
 		System.out.println("showCreateMenu()");
 		System.out.print("수입을 입력하세요. ");
 		System.out.println("날짜입력 : ");
 		System.out.println("수업내용: ");
 		System.out.println("수입입력:");
-	}
-
-	private static void showSecondMenu() {
-		System.out.println("****showSecondMenu()****");
-		System.out.println();
-		System.out.println();
-		System.out.println();
 	}
 
 	private static void showMainMenu() {
@@ -233,7 +229,7 @@ public class AccountUiHome {
 		System.out.println("[2] 월별목록");
 		System.out.println("[3] 전체목록");
 		System.out.println("[4] 수정");
-		System.out.println("[5] ");
+		System.out.println("[5] 삭제");
 
 		System.out.println("[6] 소비 지출");
 		System.out.println("[7] ");

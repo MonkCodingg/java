@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class FileReaderTest1 {
 
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader("test.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("input.txt"));
 		while(true) {
 			
 			String line = br.readLine();
@@ -17,11 +17,6 @@ public class FileReaderTest1 {
 			
 		}
 		br.close();
-		Scanner in = new Scanner(System.in);
-		String d = in.nextLine();
-		System.out.println(d);
-
-		
 	}
 
 }
