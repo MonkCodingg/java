@@ -137,8 +137,8 @@ public class AccountUiHome {
 		accountItem.setCash(in.nextInt());
 		System.out.println("수정할 현금 사용 : ");
 		accountItem.setCard(in.nextInt());
-		System.out.println("수정할 타입 : ");
-		//식비,의류,교육,주거
+		System.out.println("수정할 타입 ('수입' or '지출' 중 하나) : ");
+		//소비 or 지출 중 하나.
 		accountItem.setType(in.next());
 		System.out.println("수정할 태그 : ");
 		accountItem.setTag(in.next());
@@ -191,8 +191,8 @@ public class AccountUiHome {
 		accountItem.setCash(in.nextInt());
 		System.out.print("현금 사용 : ");
 		accountItem.setCard(in.nextInt());
-		System.out.print("타입 : ");
-		//식비,의류,교육,주거
+		System.out.print("타입 ('수입' or '지출' 중 하나 입력): ");
+		//소비 or 지출
 		accountItem.setType(in.next());
 		System.out.print("태그 : ");
 		accountItem.setTag(in.next());
