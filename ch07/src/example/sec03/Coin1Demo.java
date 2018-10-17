@@ -5,7 +5,7 @@ interface Coin {
 }
 
 
-public class CoinDemo {
+public class Coin1Demo {
 
 	public static void main(String[] args) {
 		

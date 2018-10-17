@@ -10,7 +10,7 @@ public class AbstaractClassDemo {
 		
 		Rectangle r = new Rectangle(3, 4);
 		r.draw();
-		System.out.println("");
+		System.out.printf("사각형의 넓이는 %.1f\n", r.findArea());
 	}
 
 }
