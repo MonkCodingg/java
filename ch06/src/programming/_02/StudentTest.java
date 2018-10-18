@@ -3,7 +3,6 @@ package programming._02;
 public class StudentTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 다형성
 		Person p = new Person();
 		p.setName("길동이");
@@ -27,13 +26,9 @@ public class StudentTest {
 		for (Person person : persons) {
 			person.show();
 		}
-		
 // person의 갯수를 알아야 하는 점		
 //		for (int i = 0; i < 3; i++) {
 //			persons[i].show();
 //		}
-		
-	
 	}
-
 }

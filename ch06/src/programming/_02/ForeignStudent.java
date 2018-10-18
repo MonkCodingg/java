@@ -5,7 +5,10 @@ public class ForeignStudent extends Student {
 	
 	
 	public void show() {
-		System.out.println("외국학생[이름: "+ getName() +", 나이 "+ getAge() + ", 학번 : "+ getStudentId() +", 국적 : "+ getNationality() +"]");
+		System.out.println("외국학생[이름: "+ getName() 
+						+", 나이 "+ getAge() 
+						+ ", 학번 : "+ getStudentId() 
+						+", 국적 : "+ getNationality() +"]");
 	}
 	
 	public String getNationality() {

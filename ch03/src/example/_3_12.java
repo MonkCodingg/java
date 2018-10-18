@@ -14,9 +14,6 @@ public class _3_12 {
 		while (i < 5) {
 			i++;
 		}
-		
 		System.out.println("while 문 실행 후 : " + i);
-		
 	}
-
 }

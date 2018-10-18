@@ -19,8 +19,5 @@ public class String3Demo {
 		System.out.println(s1+"!");
 		System.out.println(s3+"!");
 		System.out.println(s4+"!");
-	
 	}
-	
-
 }

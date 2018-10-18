@@ -12,7 +12,7 @@ class Circle{
 	}
 
 	double findArea() {
-		return 3.14 * radius *radius;
+		return 3.14 * radius * radius;
 	}
 	
 }

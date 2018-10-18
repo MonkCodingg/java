@@ -9,7 +9,6 @@ class Util{
 public class _4_11_UtilDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println(Util.fourTimes(5));
 	}	
 }

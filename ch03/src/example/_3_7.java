@@ -25,7 +25,8 @@ public class _3_7 {
 			numDays = 30;
 			break;
 		case 2:
-			if ( ((year % 4 ==0) && !(year % 100 == 0)) || (year % 400 == 0) ) // 윤년
+			//윤년
+			if ( ((year % 4 ==0) && !(year % 100 == 0)) || (year % 400 == 0) )
 				numDays = 29;
 			else				//평년
 				numDays = 28;
@@ -34,7 +35,7 @@ public class _3_7 {
 			System.out.println("잘못된 달입니다.");
 			break;	
 		}
-		System.out.println("2월 달은 " + numDays + "일입니다.");
+		System.out.println("3월 달은 " + numDays + "일입니다.");
 	}
 
 }

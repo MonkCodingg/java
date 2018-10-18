@@ -21,11 +21,8 @@ class Mammal extends Animal {
 }
 
 public class AnimalDemo {
-
 	public static void main(String[] args) {
 		Mammal ape = new Mammal();
 		Mammal lion = new Mammal("»çÀÚ");
-		
 	}
-
 }

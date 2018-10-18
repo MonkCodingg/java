@@ -3,7 +3,6 @@ package example.sec02;
 import java.util.Scanner;
 
 public class Array1Demo {
-
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int scores[] = new int[5];
@@ -16,7 +15,5 @@ public class Array1Demo {
 			sum += scores[i];
 		}
 		System.out.println("ЦђБе= " + sum / 5.0);
-		
 	}
-
 }

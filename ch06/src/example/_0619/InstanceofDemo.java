@@ -3,7 +3,6 @@ package example._0619;
 public class InstanceofDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Student s = new Student();
 		Person p = new Person();
 		// 앞의 변수가 뒤 타입이 맞는지

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class _3_3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		String grade;
 		System.out.println("점수를 입력하세요 : ");
