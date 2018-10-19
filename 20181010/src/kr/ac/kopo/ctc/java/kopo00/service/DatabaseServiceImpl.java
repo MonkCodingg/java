@@ -46,7 +46,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 			if (line == null)
 				break;
 		}
-		System.out.println("DatabaseServiceImpl > load() 场");
+//		System.out.println("DatabaseServiceImpl > load() 场");
 		br.close();
 	}
 
@@ -57,7 +57,7 @@ public class DatabaseServiceImpl implements DatabaseService {
 		for (AccountItem item : dao.selectAll()) {
 			pw.println(item.toString());
 		}
-		System.out.println("DatabaseServiceImpl > save() 场");
+//		System.out.println("DatabaseServiceImpl > save() 场");
 		pw.close();
 	}
 

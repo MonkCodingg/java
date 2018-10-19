@@ -94,7 +94,7 @@ public class AccountUiHome {
 
 	private static void consumingAnalyze() {
 		Scanner in = new Scanner(System.in);
-		System.out.println("소비지출 AccountUiHome-main-consumingAnalyze()");
+//		System.out.println("소비지출 AccountUiHome-main-consumingAnalyze()");
 
 		System.out.println("소비지출 서비스 원하는 년도 입력해줘 : ");
 		int year = in.nextInt();
@@ -104,7 +104,7 @@ public class AccountUiHome {
 		for (ConsumingItem consumingItem : consumingItems) {
 
 			System.out.println(
-					consumingItem.getName() + ", " + consumingItem.getAmount() + ", " + consumingItem.getRate() * 100);
+					consumingItem.getName() + ", " + consumingItem.getAmount() + ", " + (int)(consumingItem.getRate() * 100) + '%');
 		}
 	}
 
@@ -138,7 +138,7 @@ public class AccountUiHome {
 		System.out.println("수정할 현금 사용 : ");
 		accountItem.setCard(in.nextInt());
 		System.out.println("수정할 타입 ('식비''의류''교육''주거' 중 하나 입력) : ");
-		//소비 or 지출 중 하나.
+		//소비 or 지출 중 하나로 바꿀 예정
 		accountItem.setType(in.next());
 		System.out.println("수정할 태그 : ");
 		accountItem.setTag(in.next());
