@@ -1,5 +1,6 @@
 package caculator;
 
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -11,13 +12,13 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField; 
 
-public class calculator extends JFrame implements ActionListener{ 
+public class Calculator_Internet1 extends JFrame implements ActionListener{ 
     private JPanel panel; 
     private JTextField tField; 
     private JButton[] buttons; 
     private String[] labels = {"7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "0", "CE", "=", "/"}; 
  
-    public calculator() { 
+    public Calculator_Internet1() { 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         this.setTitle("계산기"); 
         this.setSize(300,200); //?? grid layout때문인진 몰라도 크기 조절이 안 됨. 
@@ -171,6 +172,6 @@ public class calculator extends JFrame implements ActionListener{
     } 
  
     public static void main(String[] args) { 
-        new calculator(); 
+        new Calculator_Internet1(); 
     } 
 }

@@ -14,8 +14,9 @@ public class ConsumeAnalyzeServiceImpl implements ConsumeAnalyzeService{
 		List<AccountItem> items = accountItemService.selectAllByMonth(year, month);
 //		식비, 300000, 0.2 => ConsumingItem
 //		의류, 200000, 0.13 => ConsumingItem
-//		교육비, 500000, 0.33 => ConsumingItem
+//		교육, 500000, 0.33 => ConsumingItem
 //		월세, 500000, 0.33 => ConsumingItem
+		//각각 저장할 저장소 준비
 		List<ConsumingItem> result = new ArrayList<ConsumingItem>();
 		ConsumingItem item1 = new ConsumingItem(); // 식비
 		item1.setName("식비");

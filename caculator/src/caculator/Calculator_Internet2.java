@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Test extends JFrame implements ActionListener {
+public class Calculator_Internet2 extends JFrame implements ActionListener {
 	JTextField T1, T2;
 	int j = 0;
 	int oldnum, temp, result;
@@ -86,7 +86,7 @@ public class Test extends JFrame implements ActionListener {
 		}
 	}
 
-	public Test() {
+	public Calculator_Internet2() {
 		// 생성자 , UI 모양 설정
 		super("계산기");
 		super.setResizable(true);
@@ -128,7 +128,7 @@ public class Test extends JFrame implements ActionListener {
 
 	public static void main(String[] args) {
 		// 생성자 호출
-		new Test();
+		new Calculator_Internet2();
 	}
 
 }
