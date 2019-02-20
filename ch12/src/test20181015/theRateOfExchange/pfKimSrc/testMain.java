@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class testMain {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		double rate;
 		String nation;
 		List<NationItem> data = new ArrayList<NationItem>();

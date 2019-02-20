@@ -3,7 +3,6 @@ package programming;
 public class ComplexTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Complex c1 = new Complex(2.0);
 		System.out.println(c1.print());

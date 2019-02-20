@@ -3,7 +3,6 @@ package example;
 public class _3_7 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int month = 3;
 		int year = 2017;
 		int numDays = 0;

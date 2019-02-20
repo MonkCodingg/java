@@ -3,7 +3,6 @@ package challenge;
 public class PrinterTest2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Printer2 p = new Printer2(10);
 
 		p.print(20);

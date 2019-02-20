@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class DistinguishEvenOdd {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// È¦¼ö Â¦¼ö ÆÇº°
 		int inputN =0;
 		

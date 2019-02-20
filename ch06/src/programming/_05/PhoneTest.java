@@ -3,7 +3,6 @@ package programming._05;
 public class PhoneTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Phone[] phones = {
 				new Phone("황진이"),
 				new Telephone("길동이", "내일"),

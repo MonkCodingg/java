@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class FactorialTest2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int result;
 		int n;
 		Scanner in = new Scanner(System.in);

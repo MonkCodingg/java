@@ -2,7 +2,6 @@ package programming.ch7;
 
 public class Student implements Human{
 	public Student(int i) {
-		// TODO Auto-generated constructor stub
 	}
 	@Override
 	

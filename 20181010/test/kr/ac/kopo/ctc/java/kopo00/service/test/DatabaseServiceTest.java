@@ -51,13 +51,11 @@ public class DatabaseServiceTest {
 	}
 
 	public static void testLoad() throws Exception {
-		// TODO Auto-generated method stub
 		databaseService.load();
 		System.out.println(accountItemDao.selectAll().size());
 	}
 
 	public static void testSave() throws Exception {
-		// TODO Auto-generated method stub
 		setUp();
 		databaseService.save();
 	}

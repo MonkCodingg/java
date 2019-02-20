@@ -3,7 +3,6 @@ package challenge;
 public class FactorialTest3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 //		System.out.println("팩토리얼 값을 원하는 정수 입력 : ");
 //		n = in.nextInt();

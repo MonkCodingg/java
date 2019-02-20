@@ -3,7 +3,6 @@ package example;
 public class _3_23 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int i1 = 3, i2 = 7, i3 = 10;
 		double d1 = 7.0, d2 = 3.0;
 		

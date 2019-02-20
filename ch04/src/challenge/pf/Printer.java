@@ -3,7 +3,6 @@ package challenge.pf;
 public class Printer {
 	int numOfPapers ;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 	

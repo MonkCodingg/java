@@ -3,7 +3,6 @@ package example;
 public class _3_8 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int number = 3;
 		switch (number) {
 		case 4:

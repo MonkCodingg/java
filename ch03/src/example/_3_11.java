@@ -3,7 +3,6 @@ package example;
 public class _3_11 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 기초 타입 float의 기본값 0.0f
 		float f = 0.1f;
 	//			%.1f : 소수점 이하 1자리 실수		

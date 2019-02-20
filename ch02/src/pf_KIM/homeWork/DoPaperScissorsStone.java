@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class DoPaperScissorsStone {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// 가위 바위 보 게임 수행
 //		Player A 입력 (가위:0, 바위:1, 보:2) => 2
 //				Player B 입력 (가위:0, 바위:1, 보:2) => 0

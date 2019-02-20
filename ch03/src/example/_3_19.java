@@ -3,7 +3,6 @@ package example;
 public class _3_19 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		System.out.println("гу(1~10) : "+sum(1, 10));
 		System.out.println("гу(10~100) :"+sum(10, 100));
 		System.out.println("гу(100~1000) :"+sum(100, 1000));

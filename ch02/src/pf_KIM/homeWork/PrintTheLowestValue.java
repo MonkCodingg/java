@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class PrintTheLowestValue {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int firstN =0, secondN =0, thirdN =0, fourthN =0, fifthN =0;
 		
 		// 최저값 변수

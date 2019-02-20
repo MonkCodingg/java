@@ -22,7 +22,6 @@ public class Calculator_Internet2 extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		String input = e.getActionCommand();
 		// 입력 판단, 기능 실행
 		if (input.equals("+")) {

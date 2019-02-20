@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class _3_5 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		System.out.print("등수를 입력하세요 : ");
 		int rank = in.nextInt();
